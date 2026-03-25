@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anshuman Multi Store | Luxury Experience</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@300;400;600&display=swap');
+
+        :root {
+            --gold: #FFD700;
+            --gold-shadow: rgba(255, 215, 0, 0.4);
+            --dark-bg: #080808;
+            --glass: rgba(255, 255, 255, 0.03);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background-color: var(--dark-bg);
+            color: #fff;
+            scroll-behavior: smooth;
+        }
+
+        /* Hero Header */
+        header {
+            height: 60vh;
+            background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('1000131819.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border-bottom: 2px solid var(--gold);
+        }
+
+        header h1 {
+            font-family: 'Cinzel', serif;
+            font-size: clamp(2rem, 10vw, 4rem);
+            color: var(--gold);
+            text-shadow: 0 0 20px var(--gold-shadow);
+            margin: 0;
+        }
+
+        /* Clean Navigation */
+        nav {
+            background: rgba(0,0,0,0.95);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255,215,0,0.2);
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        nav a:hover { color: var(--gold); }
+
+        /* Floating WhatsApp Icon */
+        .wa-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25D366;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            box-shadow: 0 0 15px rgba(37, 211, 102, 0.5);
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        /* Main Store Content */
+        .container { max-width: 1200px; margin: auto; padding: 40px 20px; }
+
+        .section-title {
+            font-family: 'Cinzel', serif;
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            color: var(--gold);
+            text-shadow: 0 0 10px rgba(255,215,0,0.2);
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        /* Advance Card Design */
+        .luxury-card {
+            background: var(--glass);
+            border: 1px solid rgba(255,255,255,0.05);
+            border-radius: 20px;
+            padding: 10px;
+            transition: 0.4s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .luxury-card:hover {
+            border-color: var(--gold);
+            background: rgba(255,215,0,0.02);
+            transform: translateY(-10px);
+        }
+
+        .luxury-card img {
+            width: 100%;
+            height: 300px;
+            border-radius: 15px;
+            object-fit: cover;
+            transition: 0.5s;
+        }
+
+        .product-info { padding: 15px; text-align: center; }
+        .product-info h3 { font-size: 1.1rem; margin-bottom: 10px; color: #eee; }
+
+        .btn-wa {
+            display: block;
+            background: linear-gradient(45deg, #BF953F, #FCF6BA, #B38728);
+            color: #000;
+            text-decoration: none;
+            padding: 12px;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        /* Footer & Clean Mobile Number */
+        footer {
+            background: #000;
+            padding: 60px 20px;
+            text-align: center;
+            border-top: 1px solid var(--gold);
+            margin-top: 50px;
+        }
+
+        .contact-info {
+            color: var(--gold);
+            font-size: 1.2rem;
+            margin: 20px 0;
+            font-weight: 600;
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.5rem; }
+            .section-title { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+<a href="https://wa.me/919693855225" class="wa-float">
+    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" width="30" alt="WA">
+</a>
+
+<header>
+    <h1>Anshuman Multi Store</h1>
+    <p>Premium Quality | Divine Experience</p>
+</header>
+
+<nav>
+    <a href="#divine">Divine Art</a>
+    <a href="#gifts">Gifts & Watches</a>
+    <a href="#fashion">Fashion & Toys</a>
+</nav>
+
+<div class="container" id="divine">
+    <h2 class="section-title">Divine Art Collection</h2>
+    <div class="product-grid">
+        <div class="luxury-card">
+            <img src="1000131812.jpg" alt="Radha Krishna">
+            <div class="product-info">
+                <h3>Radha Krishna Frame</h3>
+                <a href="https://wa.me/919693855225?text=I want to know price of Radha Krishna Frame" class="btn-wa">Check Availability</a>
+            </div>
+        </div>
+        <div class="luxury-card">
+            <img src="1000131817.jpg" alt="Ganesh Laxmi">
+            <div class="product-info">
+                <h3>Divine Ganesh Laxmi</h3>
+                <a href="https://wa.me/919693855225?text=Price of Ganesh Laxmi?" class="btn-wa">Check Availability</a>
+            </div>
+        </div>
+        <div class="luxury-card">
+            <img src="1000131818.jpg" alt="Hanuman Ji">
+            <div class="product-info">
+                <h3>Panchmukhi Hanuman</h3>
+                <a href="https://wa.me/919693855225?text=Details of Hanuman Ji Frame" class="btn-wa">Check Availability</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="gifts">
+    <h2 class="section-title">Premium Gifts</h2>
+    <div class="product-grid">
+        <div class="luxury-card">
+            <img src="1000131837.jpg" alt="Watches">
+            <div class="product-info">
+                <h3>Luxury Men's Watches</h3>
+                <a href="https://wa.me/919693855225" class="btn-wa">Order Now</a>
+            </div>
+        </div>
+        <div class="luxury-card">
+            <img src="1000131846.jpg" alt="Perfumes">
+            <div class="product-info">
+                <h3>Premium Fragrances</h3>
+                <a href="https://wa.me/919693855225" class="btn-wa">Order Now</a>
+            </div>
+        </div>
+        <div class="luxury-card">
+            <img src="1000131814.jpg" alt="Crystal">
+            <div class="product-info">
+                <h3>LED Crystal Lamp</h3>
+                <a href="https://wa.me/919693855225" class="btn-wa">Order Now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container" id="fashion">
+    <h2 class="section-title">Ladies Fashion & Toys</h2>
+    <div class="product-grid">
+        <div class="luxury-card">
+            <img src="1000131821.jpg" alt="Bags">
+            <div class="product-info">
+                <h3>Premium Handbags</h3>
+                <a href="https://wa.me/919693855225" class="btn-wa">View Details</a>
+            </div>
+        </div>
+        <div class="luxury-card">
+            <img src="1000131830.jpg" alt="Teddy">
+            <div class="product-info">
+                <h3>Plush Teddy Bears</h3>
+                <a href="https://wa.me/919693855225" class="btn-wa">View Details</a>
+            </div>
+        </div>
+        <div class="luxury-card">
+            <img src="1000131674.webp" alt="Jewelry">
+            <div class="product-info">
+                <h3>Designer Necklace</h3>
+                <a href="https://wa.me/919693855225" class="btn-wa">View Details</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <h2 style="font-family: 'Cinzel', serif; color: var(--gold);">Anshuman Multi Store</h2>
+    <p>Gifts | Divinity | Lifestyle</p>
+    <div class="contact-info">
+        ?? Bokaro Steel City, Jharkhand <br>
+        ?? 9693855225
+    </div>
+    <p style="opacity: 0.5; font-size: 0.8rem;">&copy; 2026 Anshuman Multi Store. No Extra Characters, Pure Quality.</p>
+</footer>
+
+</body>
+</html>
